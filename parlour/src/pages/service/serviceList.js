@@ -25,7 +25,7 @@ const ServiceList = () => {
         try {
             setServices("loading");
             axios.get("https://parlour-service-server.vercel.app/admin/services").then(res=>{
-                setServices(res.data);
+                setServices(res.data.services);
             })
             .catch(er=>{
                 setNotificationTooltip({
