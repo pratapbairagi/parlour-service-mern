@@ -1,0 +1,25 @@
+
+
+.service_list_container{
+    width: max-content;
+    max-width: 100%;
+    min-width: 280px;
+    overflow: auto;
+    margin: 11vh auto !important;
+}
+
+.service_list_container table thead tr td, .service_list_container table tbody tr td{
+    padding: 2px 5px;
+    white-space: no-wrap;
+    word-break: keep-all;
+    font-weight: 600;
+}
+.service_list_container table tbody tr td{
+    font-size: 80%;
+    font-weight: 500;
+    color: grey;
+}
+.service_list_container table tbody tr td button{
+    padding: 2px 4px;
+    border: none;
+}

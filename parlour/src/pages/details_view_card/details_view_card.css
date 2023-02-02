@@ -1,0 +1,86 @@
+.faceSection_container{
+    padding: 0px 0 32px 0;
+}
+.faceSection_container .row{
+    background: aliceblue; 
+    padding: 12px 8px; 
+    display: flex; 
+    justify-content: center; 
+    min-width: 240px;
+    margin-top: 8px !important;
+}
+.faceSection_container .row .card_image_col{
+    border: 2px solid rgb(215, 4, 115); 
+    background: transparent;
+}
+.faceSection_container .row .card_image_col span{
+    padding: 2px 8px; 
+    background: rgb(215, 4, 115); 
+    font-weight: 500; 
+    color:white; 
+    position:absolute; 
+    z-index:3;
+}
+.faceSection_container .row .card_image_col img{
+    width: 100%; 
+    height:100%;
+}
+.faceSection_container .card_detail_col{
+    background: white;
+}
+.faceSection_container .card_detail_col .card_container{
+    border-radius: 2px 24px 2px 24px; 
+    height:100%; 
+    background-color:transparent; 
+    padding:12px 6px; display:flex; 
+    width:100%; 
+    flex-direction:column; 
+    gap:3px;
+}
+.faceSection_container .card_detail_col .card_container h4{
+    width: 100%; 
+    min-width: 100%; 
+    color: rgb(215,4,115); 
+    letter-spacing: 1px; 
+    max-width: max-content; 
+    padding: 2px 8px; 
+    align-self:start; 
+    justify-content:space-between;
+    font-size: 170%; 
+    font-weight:600; 
+    border:none;
+    border-left: 2px solid rgb(215,4,115); 
+    display:flex;
+}
+.faceSection_container .card_detail_col .card_container h6{
+    width: 100%; 
+    text-align:left; 
+    padding: 2px 16px; 
+    background: aliceblue; 
+    font-weight: 500; 
+    color: rgb(215,4,115);
+     border-radius:4px;
+}
+.faceSection_container .card_detail_col .card_container ol{
+    width: 100%; 
+    font-size: 80%;
+    color: grey; 
+    padding: 2px 8px;
+}
+.faceSection_container .card_detail_col .card_container .facialExtraDetails_container{
+    width:100%;
+    padding:3px 16px;
+    display:flex;
+    justify-content:space-between;
+}
+.faceSection_container .card_detail_col .card_container .facialExtraDetails_container span{
+    color: rgb(215, 4, 115);
+    font-size:120%; 
+    font-weight:600;
+}
+.faceSection_container .review_container h5{
+    font-size:140%; 
+    font-weight:600; 
+    color:rgb(215,4,115); 
+    letter-spacing:1px; 
+}

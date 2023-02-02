@@ -1,0 +1,655 @@
+[
+    {
+        "category":"Hair",
+        "title": "Hair Cutting",
+        "id": "001",
+        "image": "images/hairCutting.jpeg",
+        "text": "",
+        "ingredients": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequatur sunt facere nesciunt obcaecati?",
+            "Lorem ipsum dolor sit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ratione! Repudiandae explicabo repellendus saepe vero nam dolore quia maxime?"
+        ],
+        "use": [
+            "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+            "Lorem ipsum dolor sit amet.",
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque.",
+            "Lorem ipsum dolor sit amet consectetur."
+        ],
+        "time":{
+            "from": 30,
+            "to": 90
+        },
+        "charge": {
+            "normal":399,
+            "home_Service":100
+        },
+        "reviews":[
+            {
+                "user":"Ritika",
+                "id":"001",
+                "email":"Ritika1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ducimus illum beatae suscipit eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":5
+            },
+            {
+                "user":"Naina",
+                "id":"002",
+                "email":"Naina1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ducimus illum beatae suscipit eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":4.5
+            },
+            {
+                "user":"Preeti",
+                "id":"003",
+                "email":"Preeti1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":5
+            },
+            {
+                "user":"Ritika",
+                "id":"004",
+                "email":"Ritika1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem  Cum ducimus illum beatae voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":4.4
+            },
+            {
+                "user":"Sonam",
+                "id":"005",
+                "email":"Sonam1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ducimus illum beatae suscipit eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":5
+            }
+        ],
+        "ratings": 0
+    },
+    {
+        "category":"Hair",
+        "title": "Hair Curl",
+        "id": "002",
+        "image": "images/hair_curl.jpeg",
+        "text": "",
+        "ingredients": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequatur sunt facere nesciunt obcaecati?",
+            "Lorem ipsum dolor sit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ratione! Repudiandae explicabo repellendus saepe vero nam dolore quia maxime?"
+        ],
+        "use": [
+            "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+            "Lorem ipsum dolor sit amet.",
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque.",
+            "Lorem ipsum dolor sit amet consectetur."
+        ],
+        "time":{
+            "from": 30,
+            "to": 90
+        },
+        "charge": {
+            "normal":399,
+            "home_Service":100
+        },
+        "reviews":[
+            {
+                "user":"Ritika",
+                "id":"006",
+                "email":"Ritika1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ducimus illum beatae suscipit eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":5
+            },
+            {
+                "user":"Naina",
+                "id":"007",
+                "email":"Naina1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ducimus illum beatae suscipit eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":4.5
+            },
+            {
+                "user":"Preeti",
+                "id":"008",
+                "email":"Preeti1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":5
+            },
+            {
+                "user":"Ritika",
+                "id":"009",
+                "email":"Ritika1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem  Cum ducimus illum beatae voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":4.4
+            }
+        ],
+        "ratings": 0
+    },
+    {
+        "category":"Hair",
+        "title": "Hair Coloring",
+        "id": "003",
+        "image": "images/hair_coloring.jpeg",
+        "text": "",
+        "ingredients": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequatur sunt facere nesciunt obcaecati?",
+            "Lorem ipsum dolor sit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ratione! Repudiandae explicabo repellendus saepe vero nam dolore quia maxime?"
+        ],
+        "use": [
+            "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+            "Lorem ipsum dolor sit amet.",
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque.",
+            "Lorem ipsum dolor sit amet consectetur."
+        ],
+        "time":{
+            "from": 30,
+            "to": 90
+        },
+        "charge": {
+            "normal":399,
+            "home_Service":100
+        },
+        "reviews":[
+            {
+                "user":"Ritika",
+                "id":"010",
+                "email":"Ritika1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ducimus illum beatae suscipit eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":5
+            },
+            {
+                "user":"Naina",
+                "id":"011",
+                "email":"Naina1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ducimus illum beatae suscipit eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":4.5
+            },
+            {
+                "user":"Preeti",
+                "id":"012",
+                "email":"Preeti1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":5
+            }
+        ],
+        "ratings": 0
+    },
+    {
+        "category":"Hair",
+        "title": "Hair Straightening",
+        "id": "004",
+        "image": "images/hairStraightning.jpeg",
+        "text": "",
+        "ingredients": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequatur sunt facere nesciunt obcaecati?",
+            "Lorem ipsum dolor sit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ratione! Repudiandae explicabo repellendus saepe vero nam dolore quia maxime?"
+        ],
+        "use": [
+            "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+            "Lorem ipsum dolor sit amet.",
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque.",
+            "Lorem ipsum dolor sit amet consectetur."
+        ],
+        "time":{
+            "from": 30,
+            "to": 90
+        },
+        "charge": {
+            "normal":399,
+            "home_Service":100
+        },
+        "reviews":[
+            {
+                "user":"Ritika",
+                "id":"013",
+                "email":"Ritika1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ducimus illum beatae suscipit eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":5
+            },
+            {
+                "user":"Naina",
+                "id":"014",
+                "email":"Naina1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ducimus illum beatae suscipit eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":4.5
+            },
+            {
+                "user":"Preeti",
+                "id":"015",
+                "email":"Preeti1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":5
+            },
+            {
+                "user":"Ritika",
+                "id":"016",
+                "email":"Ritika1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem  Cum ducimus illum beatae voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":4.4
+            },
+            {
+                "user":"Sonam",
+                "id":"017",
+                "email":"Sonam1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ducimus illum beatae suscipit eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":5
+            }
+        ],
+        "ratings": 0
+    },
+    {   
+        "category":"Pedicure & Manicure",
+        "title": "Pedicure",
+        "id": "005",
+        "image": "images/pedicure.jpeg",
+        "text": "",
+        "ingredients": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequatur sunt facere nesciunt obcaecati?",
+            "Lorem ipsum dolor sit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ratione! Repudiandae explicabo repellendus saepe vero nam dolore quia maxime?"
+        ],
+        "use": [
+            "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+            "Lorem ipsum dolor sit amet.",
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque.",
+            "Lorem ipsum dolor sit amet consectetur."
+        ],
+        "time":{
+            "from": 30,
+            "to": 90
+        },
+        "charge": {
+            "normal":399,
+            "home_Service":100
+        },
+        "reviews":[
+            {
+                "user":"Ritika",
+                "id":"018",
+                "email":"Ritika1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ducimus illum beatae suscipit eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":5
+            },
+            {
+                "user":"Naina",
+                "id":"018",
+                "email":"Naina1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ducimus illum beatae suscipit eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":4.5
+            },
+            {
+                "user":"Preeti",
+                "id":"020",
+                "email":"Preeti1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":5
+            }
+        ],
+        "ratings": 0
+    },
+    {   
+        "category":"Pedicure & Manicure",
+        "title": "Manicure",
+        "id": "006",
+        "image": "images/manicure.jpeg",
+        "text": "",
+        "ingredients": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequatur sunt facere nesciunt obcaecati?",
+            "Lorem ipsum dolor sit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ratione! Repudiandae explicabo repellendus saepe vero nam dolore quia maxime?"
+        ],
+        "use": [
+            "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+            "Lorem ipsum dolor sit amet.",
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque.",
+            "Lorem ipsum dolor sit amet consectetur."
+        ],
+        "time":{
+            "from": 30,
+            "to": 90
+        },
+        "charge": {
+            "normal":399,
+            "home_Service":100
+        },
+        "reviews":[
+            {
+                "user":"Ritika",
+                "id":"021",
+                "email":"Ritika1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ducimus illum beatae suscipit eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":5
+            },
+            {
+                "user":"Naina",
+                "id":"022",
+                "email":"Naina1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ducimus illum beatae suscipit eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":4.5
+            },
+            {
+                "user":"Preeti",
+                "id":"023",
+                "email":"Preeti1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":5
+            },
+            {
+                "user":"Ritika",
+                "id":"024",
+                "email":"Ritika1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem  Cum ducimus illum beatae voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":4.4
+            }
+        ],
+        "ratings": 0
+    },
+    {   
+        "category":"Face",
+        "title": "Face Pack",
+        "id": "007",
+        "image": "images/face_pack.jpeg",
+        "text": "",
+        "ingredients": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequatur sunt facere nesciunt obcaecati?",
+            "Lorem ipsum dolor sit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ratione! Repudiandae explicabo repellendus saepe vero nam dolore quia maxime?"
+        ],
+        "use": [
+            "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+            "Lorem ipsum dolor sit amet.",
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque.",
+            "Lorem ipsum dolor sit amet consectetur."
+        ],
+        "time":{
+            "from": 30,
+            "to": 90
+        },
+        "charge": {
+            "normal":399,
+            "home_Service":100
+        },
+        "reviews":[
+            {
+                "user":"Ritika",
+                "id":"025",
+                "email":"Ritika1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ducimus illum beatae suscipit eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":5
+            },
+            {
+                "user":"Naina",
+                "id":"026",
+                "email":"Naina1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ducimus illum beatae suscipit eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":4.5
+            },
+            {
+                "user":"Preeti",
+                "id":"027",
+                "email":"Preeti1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":5
+            },
+            {
+                "user":"Ritika",
+                "id":"028",
+                "email":"Ritika1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem  Cum ducimus illum beatae voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":4.4
+            },
+            {
+                "user":"Sonam",
+                "id":"029",
+                "email":"Sonam1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ducimus illum beatae suscipit eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":5
+            }
+        ],
+        "ratings": 0
+    },
+    {   
+        "category":"Face",
+        "title": "Facial",
+        "id": "008",
+        "image": "images/facial.jpeg",
+        "text": "",
+        "ingredients": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequatur sunt facere nesciunt obcaecati?",
+            "Lorem ipsum dolor sit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ratione! Repudiandae explicabo repellendus saepe vero nam dolore quia maxime?"
+        ],
+        "use": [
+            "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+            "Lorem ipsum dolor sit amet.",
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque.",
+            "Lorem ipsum dolor sit amet consectetur."
+        ],
+        "time":{
+            "from": 30,
+            "to": 90
+        },
+        "charge": {
+            "normal":399,
+            "home_Service":100
+        },
+        "reviews":[
+            {
+                "user":"Ritika",
+                "id":"030",
+                "email":"Ritika1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ducimus illum beatae suscipit eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":5
+            },
+            {
+                "user":"Naina",
+                "id":"031",
+                "email":"Naina1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ducimus illum beatae suscipit eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":4.5
+            }
+        ],
+        "ratings": 0
+    },
+    {   
+        "category":"Face",
+        "title": "Face Massage",
+        "id": "009",
+        "image": "images/face_massage.jpeg",
+        "text": "",
+        "ingredients": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequatur sunt facere nesciunt obcaecati?",
+            "Lorem ipsum dolor sit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ratione! Repudiandae explicabo repellendus saepe vero nam dolore quia maxime?"
+        ],
+        "use": [
+            "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+            "Lorem ipsum dolor sit amet.",
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque.",
+            "Lorem ipsum dolor sit amet consectetur."
+        ],
+        "time":{
+            "from": 30,
+            "to": 90
+        },
+        "charge": {
+            "normal":399,
+            "home_Service":100
+        },
+        "reviews":[
+            {
+                "user":"Ritika",
+                "id":"032",
+                "email":"Ritika1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ducimus illum beatae suscipit eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":5
+            },
+            {
+                "user":"Naina",
+                "id":"033",
+                "email":"Naina1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ducimus illum beatae suscipit eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":4.5
+            },
+            {
+                "user":"Ritika",
+                "id":"034",
+                "email":"Ritika1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem  Cum ducimus illum beatae voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":4.4
+            },
+            {
+                "user":"Sonam",
+                "id":"035",
+                "email":"Sonam1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ducimus illum beatae suscipit eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":5
+            }
+        ],
+        "ratings": 0
+    },
+    {   
+        "category":"Threading",
+        "title": "Eyebrow Threading",
+        "id": "010",
+        "image": "images/eyebrow_threading.jpeg",
+        "text": "",
+        "ingredients": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequatur sunt facere nesciunt obcaecati?",
+            "Lorem ipsum dolor sit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ratione! Repudiandae explicabo repellendus saepe vero nam dolore quia maxime?"
+        ],
+        "use": [
+            "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+            "Lorem ipsum dolor sit amet.",
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque.",
+            "Lorem ipsum dolor sit amet consectetur."
+        ],
+        "time":{
+            "from": 30,
+            "to": 90
+        },
+        "charge": {
+            "normal":399,
+            "home_Service":100
+        },
+        "reviews":[
+            {
+                "user":"Ritika",
+                "id":"036",
+                "email":"Ritika1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ducimus illum beatae suscipit eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":5
+            }
+        ],
+        "ratings": 0
+    },
+    {   
+        "category":"Threading",
+        "title": "Upper Lips Threading",
+        "id": "011",
+        "image": "images/upperLips_threading.jpeg",
+        "text": "",
+        "ingredients": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequatur sunt facere nesciunt obcaecati?",
+            "Lorem ipsum dolor sit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ratione! Repudiandae explicabo repellendus saepe vero nam dolore quia maxime?"
+        ],
+        "use": [
+            "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+            "Lorem ipsum dolor sit amet.",
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque.",
+            "Lorem ipsum dolor sit amet consectetur."
+        ],
+        "time":{
+            "from": 30,
+            "to": 90
+        },
+        "charge": {
+            "normal":399,
+            "home_Service":100
+        },
+        "reviews":[
+            {
+                "user":"Preeti",
+                "id":"037",
+                "email":"Preeti1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":5
+            },
+            {
+                "user":"Ritika",
+                "id":"038",
+                "email":"Ritika1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem  Cum ducimus illum beatae voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":4.4
+            },
+            {
+                "user":"Sonam",
+                "id":"039",
+                "email":"Sonam1@gmail.com",
+                "number":"9876543210",
+                "review":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ducimus illum beatae suscipit eius officiis aliquid magni voluptatibus eos provident blanditiis consequatur, et assumenda adipisci!",
+                "rating":5
+            }
+        ],
+        "ratings": 0
+    }
+]

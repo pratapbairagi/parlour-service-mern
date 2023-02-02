@@ -1,0 +1,99 @@
+.sectionContainer{
+    padding: 2px 8px 0 2px !important;
+    background-image: linear-gradient(to bottom, aliceblue, white);
+}
+.sectionContainer h3{
+    position: relative;
+    padding: 0 10px !important;
+    color: rgb(203, 4, 115);
+    margin: auto !important;
+    margin-top: 16px !important;
+    text-align: center !important;
+    height: 38px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border: 2px solid rgb(203, 4, 115);
+    border-top: none;
+    border-bottom: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.sectionContainer h3::before{
+    position: absolute;
+    content: " " !important;
+    width: 20% !important;
+    height: 3px !important;
+    left: -20%;
+    border-top: 21px solid transparent;
+    border-bottom: 21px solid transparent;
+    border-right: 21px solid rgb(203, 4, 115);
+    top: -2px;
+
+    /* top: calc( (100% - 3px)/2) ; */
+    /* background-color: rgb(203, 4, 115); */
+    /* border: 3px solid red; */
+}
+.sectionContainer h3::after{
+    position: absolute;
+    content: " " !important;
+    width: 20% !important;
+    height: 3px !important;
+    right: -20%;
+    /* background-color: rgb(203, 4, 115); */
+    border-top: 21px solid transparent;
+    border-bottom: 21px solid transparent;
+    border-left: 21px solid rgb(203, 4, 115);
+    top: -2px;
+    /* top: calc( (100% - 2px)/2); */
+}
+.sectionContainerInner{
+    justify-content: start;
+    column-gap: 32px;
+    row-gap: 6px;
+    padding: 16px 6px !important;
+    overflow-x: scroll;
+}
+.setctionContents{
+    float: left !important;
+    width: 15% !important;
+    max-width: 140px;
+    cursor: pointer;
+    border-radius:50%; 
+    border:3px double red; 
+    padding:3px;
+    display:flex;
+    justify-content:center; 
+    align-items:center;
+    min-width: 80px;
+    align-self: left;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.setctionContents img{
+    width:100% !important;
+    aspect-ratio:1/1;
+    max-width:200px;
+    border-radius: 50%;
+}
+.setctionContents span{
+    padding: 1px 6px !important;
+    position: absolute;
+    font-size: 80%;
+    width: max-content !important;
+    background-color: rgba(0,0,0, .3);
+    min-width: 100%;
+    color: white;
+    font-weight: 500;
+    text-align: center !important;
+    margin: auto !important;
+    box-shadow: 0 0 4px white;
+}
+.sectionContainer .setctionContents:hover img{
+    width: 95% !important;
+}
+
+@media only screen and ( min-width: 460px){
+    .sectionContainerInner{
+        justify-content: center !important;
+    }
+}

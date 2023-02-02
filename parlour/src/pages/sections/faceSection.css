@@ -1,0 +1,27 @@
+.faceSection_container .row img:hover{
+    transform: scale(1.04, 1.06);
+    border: 2px solid rgb(215,4,115);
+}
+.card_image_heart{
+    position: absolute;
+    z-index: 3;
+    width: 32px;
+    height: 32px;
+    right: 15px;
+    top: 15px;
+    background-color: white;
+    fill: rgb(215,4,115);
+    border-radius: 4px;
+    padding: 8px;
+    display: none;
+}
+.faceSection_container .row .col:hover .card_image_heart{
+    display: block;
+}
+.card_image_stars{
+    position: absolute;
+    z-index: 3;
+    bottom: 15px;
+    left: 15px;
+}
+

@@ -1,0 +1,82 @@
+/* home */
+  .homeBannerContainer{
+    position: relative;
+    height: 90vh;
+    height: 70vh !important;
+    margin-top: 6vh !important;
+    padding: 0 !important;
+}
+.homeBannerContainer .col{
+    height: 50% !important;
+}
+.homeBannerContainer .row .col:nth-child(1){
+    height: 48% !important;
+    padding-top: 2% !important;
+}
+.homeBannerContainer .row .col:nth-child(2){
+    height: 52% !important;
+    justify-content: end !important;
+    background-color: rgb(203,4,115);
+    clip-path: polygon(50% 0, 100% 45%, 100% 100%, 0 100%, 0 45%);
+}
+.bannerText{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.homeBannerContainer h2{
+    position:absolute;
+    font-weight:700; 
+    background:white;
+    color:rgb(203,4,115);
+    width:max-content !important;
+    min-width: 130px !important;
+    border: 4px double rgb(203,4,115);
+    padding: 3px 0;
+    box-shadow:  0 0 0 4px white;
+    text-align: center !important;
+    display: grid;
+    left: calc( 50% - 65px); 
+    bottom: -5.5%;
+    z-index: 1;
+    display: none;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .homeBannerContainer{
+        background-repeat: no-repeat;
+        background-position:bottom, left;
+        background-size: cover;
+        min-height: 50vh;
+        margin-top: 2vh !important;
+    }
+    
+    .homeBannerContainer .row .col:nth-child(1){
+        height: 90% !important;
+    }
+   
+    .homeBannerContainer .row .col:nth-child(2){
+        justify-content: center !important;
+        height:  100% !important;
+        clip-path: polygon(36% 0, 100% 0, 100% 100%, 38% 100%, 0 51%);
+    }
+    .homeBannerContainer h2{
+      bottom: -7%;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    .homeBannerContainer{
+        background-repeat: no-repeat;
+        background-position:bottom, left;
+        background-size: cover;
+        height: 70vh;
+        margin-top: 2vh !important;
+    }
+    .homeBannerContainer .col{
+        height: 90% !important;
+    }
+  .homeBannerContainer h2{
+    bottom: -14%;
+  }
+  }

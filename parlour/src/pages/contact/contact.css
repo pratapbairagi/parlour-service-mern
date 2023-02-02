@@ -1,0 +1,197 @@
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 16px 0 !important;
+}
+.contact-container h2{
+    width:max-content;
+    color:rgb(215, 4, 115);
+    font-weight:600;
+}
+.contact-info h5{
+    font-size:90%;
+    font-weight:600; 
+    color:white;
+    padding-left: 14px !important;
+}
+.row-container{
+    display: flex !important;
+    width: 96% !important;
+    max-width: 800px;
+    height: 90vh !important;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    padding: 0 32px !important;
+}
+.filledInformation{
+    height: 60% !important;
+    position: absolute;
+    left: 6%;
+    width: 30% !important;
+    background-color: rgb(215, 4, 115) !important;
+}
+.contact-container .row-container .contact-form{
+    background-color: pink;
+    height: 74% !important;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 16px 0 !important;
+}
+.contact-container .row-container .row{
+    width: 80% !important;
+    row-gap: 4px;
+}
+
+.contact-form .row .col{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px !important;
+}
+.contact-form .row .col:first-child{
+    margin-top: 6px !important;
+}
+.contact-header h5{
+    color: grey;
+    font-weight: 600;
+    font-size: 140%;
+    letter-spacing: 1px;
+    padding: 8px 0 !important;
+}
+.contact-form .row .col label{
+    font-size: 80%;
+    font-weight: 600;
+    color: rgb(215, 4, 115);
+    letter-spacing: 1px;
+}
+.contact-container .row-container .row .col input{
+    height: 60%;
+    border: none;
+    border-bottom: 1px solid grey;
+    color: grey;
+    outline: none;
+    padding: 0 8px;
+    background-color: transparent;
+}
+.contact-container .row-container .row .col textarea{
+    background-color: transparent;
+}
+.filledInformation-row{
+    width: 100% ; 
+    display:flex;
+    flex-wrap:wrap;
+    row-gap: 12px;
+    padding: 10% 5% !important;
+}
+.filledInformation-columns{
+    width:100%; 
+    display:flex;
+}
+.filledInformation-columns:last-child{
+    column-gap: 8px;
+    position: absolute;
+    bottom: 8px;
+    left: 2%;
+    width: 96%;
+    padding: 8px 16px;
+    color: rgb(215, 4, 115);
+    background-color: white;
+}
+.filledInformation-columns .col{
+     display:flex; 
+     justify-content:center; 
+    color:white;
+    font-size: 65% !important;
+}
+
+.filledInformation-columns .col:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    font-size:80%;
+    font-weight:500;
+    color:white;
+}
+@media only screen and ( max-width: 768px){
+.contact-container{
+    justify-content: start;
+    align-items: sta;
+    min-height: 75vh !important;
+    height: max-content !important;
+    padding: 2vh 0 !important;
+    /* position:sticky; */
+    /* top: 10vh !important; */
+}
+.contact-info h5{
+    font-size:90%;
+    font-weight:600; 
+    color:white;
+    padding-left: 30px !important;
+}
+    .row-container{
+        flex-direction: column;
+        width: 100% !important;
+        position: relative;
+        height: max-content !important;
+        min-height: 65vh !important;
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 4px !important;
+    }
+    .filledInformation{
+        /* position: absolute; */
+        position: relative;
+        z-index: 4;
+        width: 90% !important;
+        height: 80% !important;
+        /* top: -27%; */
+        left: 0%;
+        padding: 0 !important;
+        margin-left: 0 !important;
+        margin-top: -20% !important;
+        background-color: rgb(215, 4, 115) !important;
+    }
+.filledInformation-row{
+    height: max-content !important;
+    row-gap: 8px;
+    padding: 3vh 2.5% 6vh 2.5% !important;
+}
+.contact-form .row .col{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0 !important;
+}
+.contact-container .row-container .contact-form{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start ;
+    justify-content: center !important;
+    width: 92%;
+    height: max-content !important;
+    padding: 8px 16px;
+    background-color: pink;
+    margin-top: 20% !important;
+}
+.contact-form .row{
+    width: 90% !important;
+    height: max-content !important;
+    display: flex !important;
+    flex-wrap: wrap;
+    row-gap: 2px !important;
+    margin: 0 !important;
+    margin-top:  0% !important;
+}
+.contact-container .row-container .row .col input{
+    height: 60%;
+    border: none;
+    border-bottom: 1px solid grey;
+    color: grey;
+    outline: none;
+    padding: 0 8px;
+}
+
+}
