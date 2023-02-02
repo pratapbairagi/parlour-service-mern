@@ -22,7 +22,7 @@ const UsersList = () => {
 
     const fetchServices = async () => {
         try {
-            await axios.get("http://localhost:4444/admin/users").then(res => {
+            await axios.get("https://parlour-service-server.vercel.app/admin/users").then(res => {
                 setUsers(res.data.users)
             })
             .catch(er=>{
@@ -64,7 +64,7 @@ const UsersList = () => {
         })
 
         try {
-            axios.delete(`http://localhost:4444/admin/user/delete/${id}`).then(res => {
+            axios.delete(`https://parlour-service-server.vercel.app/admin/user/delete/${id}`).then(res => {
                 if (res.data.success) {
                     fetchServices()
                     setNotificationTooltip({
