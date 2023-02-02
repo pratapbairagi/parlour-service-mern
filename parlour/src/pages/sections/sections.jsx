@@ -39,7 +39,7 @@ const Sections = ({ search, servicesData }) => {
                 <span>Hair</span>
                 </a> */}
                 {uniqueCategory.map((v,i)=>{
-                    return <a href={`#${v.replace(" ", "and")}`} className="setctionContents">
+                    return <a href={`#${v.replace(" ", "and")}`} key={i} className="setctionContents">
                     <img src="/images/facial_image_logo.jpeg" alt="" />
                     <span>{v}</span>
                 </a>

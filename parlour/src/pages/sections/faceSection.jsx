@@ -5,12 +5,7 @@ import {HeartFill} from "react-bootstrap-icons"
 
 const FaceSection = ({ id, data, index }) => {
 
-    console.log(data)
-    
     const params = useParams()
-
-    console.log(id)
-
 
     return (<div id={id} className={`container-fluid faceSection_container ${index === 0 && "mt-2"} `} style={{ padding: "8px 4px 10px 4px", background: `${index != "undefined" && index % 2 == 0 ? "aliceblue" : " white"}` }}>
         {data.length > 0 && <h4 className="mt-1 mb-1" style={{ width: "100%", borderLeft: "2px solid rgb(203,4,115)", fontSize: "150%", padding: "2px 6px", color: "rgb(203,4,115)", fontWeight: "600", letterSpacing: "1px" }}>{data[0].category}</h4>}
