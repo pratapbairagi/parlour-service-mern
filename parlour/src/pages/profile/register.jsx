@@ -100,7 +100,7 @@ const RegisterUser = ({ setAuthToggle }) => {
         }
     }
     return (
-        <div className="container-fluid mt-5 py-4" style={{ background: "whitesmoke" }}>
+        <div className="container-fluid mt-5 py-4" style={{ background: "whitesmoke", minHeight:"90vh" }}>
 
             {notificationTooktip.loading && <Loading />}
             {notificationTooktip.mssg !== null && <NotificationToolTip message={notificationTooktip} />}

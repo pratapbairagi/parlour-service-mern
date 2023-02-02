@@ -46,8 +46,13 @@ const Header = ({ searchData, userAuth }) => {
     const logoutHandler = async () => {
         try {
             axios.get("https://parlour-service-server.vercel.app/user/logout/me", {
-                headers: { "Content-Type": "application/json" },
-                withCredentials: true
+                headers: { 
+                    "Content-Type": "application/json",
+                     Accept : "application/json" 
+                    },
+                mode : "cors",
+                withCredentials : true,
+                credentials : "include"
             }).then(res => {
                 if (res.data.success) {
                     navigate("/")

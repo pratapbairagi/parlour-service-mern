@@ -1,10 +1,15 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useParams } from "react-router-dom";
 import "./faceSection.css";
 import {StarFill, StarHalf} from "react-bootstrap-icons";
 import {HeartFill} from "react-bootstrap-icons"
 
 const FaceSection = ({ id, data, index }) => {
-    const params = useLocation()
+
+    console.log(data)
+    
+    const params = useParams()
+
+    console.log(id)
 
 
     return (<div id={id} className={`container-fluid faceSection_container ${index === 0 && "mt-2"} `} style={{ padding: "8px 4px 10px 4px", background: `${index != "undefined" && index % 2 == 0 ? "aliceblue" : " white"}` }}>

@@ -46,7 +46,7 @@ const Login = ({setAuthToggle}) => {
 
     console.log(user)
     return(
-        <div className="container-fluid mt-5 py-4" style={{background:"whitesmoke"}}>
+        <div className="container-fluid mt-5 py-4" style={{background:"whitesmoke", minHeight:"90vh"}}>
             <h4 className="mb-2" style={{textAlign:"center", width:"100%", fontWeight:"600", color:"grey"}}>SIGN-IN</h4>
             <div className="row">
 
