@@ -57,13 +57,15 @@ const RegisterUser = ({ setAuthToggle }) => {
         try {
             // if (user.name && user.phone && user.email && user.address && user.password && user.confirmPassword && user.image && user.address && user.gender && user.tnc) {
                 axios.post("https://parlour-service-server.vercel.app/user/register/me", user, {
+                // axios.post("http://localhost:4444/user/register/me", user, {
+
                     headers: { "Content-Type": "application/json" },
                     withCredentials: true
                     
                 }).then(res => {
 
                     // setToken(res.data.token);
-                    navigate("/profile")
+                    navigate("/")
                     setNotificationTooltip({
                         ...notificationTooktip,
                         success: true,

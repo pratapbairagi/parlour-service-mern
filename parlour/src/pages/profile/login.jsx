@@ -22,6 +22,8 @@ const Login = ({setAuthToggle}) => {
 
         try {
            await axios.post("https://parlour-service-server.vercel.app/user/login/me", 
+        // await axios.post("http://localhost:4444/user/login/me", 
+
             user,
             {
                 headers : { 
@@ -44,7 +46,6 @@ const Login = ({setAuthToggle}) => {
         }
     }
 
-    console.log(user)
     return(
         <div className="container-fluid mt-5 py-4" style={{background:"whitesmoke", minHeight:"90vh"}}>
             <h4 className="mb-2" style={{textAlign:"center", width:"100%", fontWeight:"600", color:"grey"}}>SIGN-IN</h4>

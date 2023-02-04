@@ -155,11 +155,17 @@ export const logoutUser = asyncCatch ( async (req, res, next) => {
         return next( new AppError("Need to login !", 401))
     }
 
-    await res.clearCookie("jwt")
+//    const logoutToken = await res.clearCookie("jwt");
+
+   const opt = {
+    httpOnly : true,
+    expires : new Date(Date.now()),
+    secure : true
+   }
     
-    return res.status(200).json({
+    return res.cookie("jwt", null, opt).status(200).json({
         success : true,
-        message: "Log out successfully !"
+        message : "Log out successfully !"
     })
 })
 

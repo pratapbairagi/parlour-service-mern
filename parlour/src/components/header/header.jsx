@@ -13,7 +13,7 @@ import { PersonCircle, BoxArrowInRight, ListStars, PersonFillGear, People, BoxAr
 import { useRef } from "react";
 import axios from "axios";
 
-const Header = ({ searchData, userAuth }) => {
+const Header = ({ searchData, userAuth, logoutFun }) => {
 
     let [toggle, setToggle] = useState("none");
     const navigate = useNavigate()
@@ -43,28 +43,31 @@ const Header = ({ searchData, userAuth }) => {
     })
 
     // logout user
-    const logoutHandler = async () => {
-        try {
-            axios.get("https://parlour-service-server.vercel.app/user/logout/me", {
-                headers: { 
-                    "Content-Type": "application/json",
-                     Accept : "application/json" 
-                    },
-                mode : "cors",
-                withCredentials : true,
-                credentials : "include"
-            }).then(res => {
-                if (res.data.success) {
-                    navigate("/")
-                }
+    // const logoutHandler = async () => {
+    //     try {
+    //         axios.get("https://parlour-service-server.vercel.app/user/logout/me", {
+    //         // axios.get("http://localhost:4444/user/logout/me", {
 
-            }).catch(er => {
-                console.log(er)
-            })
-        } catch (error) {
+    //             headers: { 
+    //                 "Content-Type": "application/json",
+    //                  Accept : "application/json"
+    //                 },
+    //             mode : "cors",
+    //             withCredentials : true,
+    //             credentials : "include"
+    //         }).then(res => {
+    //             if (res.data.success) {
+    //                 // console.log("res logout", res.data)
+    //                 navigate("/")
+    //             }
 
-        }
-    }
+    //         }).catch(er => {
+    //             console.log(er)
+    //         })
+    //     } catch (error) {
+
+    //     }
+    // }
 
     // user toggle
     const userLogoToggleHandler = (e) => {
@@ -103,7 +106,7 @@ const Header = ({ searchData, userAuth }) => {
                         <PersonCircle color="rgb(203,4,115)" onClick={(e) => userLogoToggleHandler(e)} style={{ cursor: "pointer", position:"absolute", zIndex:"20", background:"white", borderRadius:"50%", boxShadow:"0 0 4px grey", border:"1px solid white" }} size="36px" />
 
                         {userAuth.success ? <>
-                            <span onClick={logoutHandler} style={{ padding: "3px 3px 3px 7px", position: "absolute", zIndex: "19", cursor: "pointer", background:"white", borderRadius:"50%", boxShadow:"0 0 4px grey", top:"6px", border:"1px solid white", background: "rgb(203,4,115)", width: "28px", height: "28px", display: "grid", placeItems: "center" }}>
+                            <span onClick={logoutFun} style={{ padding: "3px 3px 3px 7px", position: "absolute", zIndex: "19", cursor: "pointer", background:"white", borderRadius:"50%", boxShadow:"0 0 4px grey", top:"6px", border:"1px solid white", background: "rgb(203,4,115)", width: "28px", height: "28px", display: "grid", placeItems: "center" }}>
                                 <BoxArrowRight size="18px" color="white" />
                             </span>
                         </> : <>

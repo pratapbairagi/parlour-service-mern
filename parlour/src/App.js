@@ -48,6 +48,8 @@ function App() {
     
     try {
       axios.get("https://parlour-service-server.vercel.app/logged/check", {
+      // axios.get("http://localhost:4444/logged/check", {
+
         headers:{ 
           "Content-Type":"application/json"
         },
@@ -106,11 +108,37 @@ function App() {
 
   }
 
+  const logoutFun = async () => {
+    try {
+      axios.get("https://parlour-service-server.vercel.app/user/logout/me", {
+      // axios.get("http://localhost:4444/user/logout/me", {
+
+          headers: { 
+              "Content-Type": "application/json",
+               Accept : "application/json"
+              },
+          mode : "cors",
+          withCredentials : true,
+          credentials : "include"
+      }).then(res => {
+          if (res.data.success) {
+
+              // navigate("/")
+          }
+
+      }).catch(er => {
+          console.log(er)
+      })
+  } catch (error) {
+
+  }
+  }
+
 
   return (
     <div className="App">
       <BrowserRouter>
-        <Header searchData={setSearch} userAuth={userAuth} />
+        <Header searchData={setSearch} userAuth={userAuth} logoutFun={logoutFun}/>
 
 
         {/* <Layout/> */}

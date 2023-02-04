@@ -5,7 +5,7 @@ import AppError from "../utils/errorHandler.js";
 
 const UserAuth = asyncCatch ( async (req, res, next) => {
     const {jwt} = await req.cookies
-    // console.log("jwt", req.cookies)
+    console.log("jwt", req.cookies)
     const {id} = jwToken.verify(jwt, "cke73trdU&T t^R76R%e6e65R7 8y9 rTe6  kUYE$y55e47");
 
     const user = await User.findById(id)
