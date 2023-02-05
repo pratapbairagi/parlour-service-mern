@@ -147,13 +147,13 @@ export const userLogged = asyncCatch( async (req, res, next)=> {
 // logout user
 export const logoutUser = asyncCatch ( async (req, res, next) => {
 
-    const id = req.user;
+    // const id = req.user;
 
-    const user = await User.findById(id);
+    // const user = await User.findById(id);
 
-    if(!user){
-        return next( new AppError("Need to login !", 401))
-    }
+    // if(!user){
+    //     return next( new AppError("Need to login !", 401))
+    // }
 
 //    const logoutToken = await res.clearCookie("jwt");
 
@@ -162,8 +162,10 @@ export const logoutUser = asyncCatch ( async (req, res, next) => {
     expires : new Date(Date.now()),
     secure : true
    }
-    
-    return res.cookie("jwt", null, opt).status(200).json({
+
+   await res.cookie("jwt", null, opt);
+
+    return res.status(200).json({
         success : true,
         message : "Log out successfully !"
     })
