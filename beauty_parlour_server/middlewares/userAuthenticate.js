@@ -12,11 +12,11 @@ const UserAuth = asyncCatch ( async (req, res, next) => {
 
     // console.log("user", user)
     if(!user){
-    console.log("user auth token 1", jwt)
+    // console.log("user auth token 1", jwt)
 
         return next( new AppError("You need to login !", 401))
     }
-    console.log("user auth token 2", jwt)
+    // console.log("user auth token 2", jwt)
     req.user = user
     next()
 })

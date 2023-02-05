@@ -16,8 +16,6 @@ import axios from "axios";
 const Header = ({ searchData, userAuth, logoutFun }) => {
 
     let [toggle, setToggle] = useState("none");
-    const navigate = useNavigate()
-
 
     $(function () {
         $(".handBurger").on("click", function () {

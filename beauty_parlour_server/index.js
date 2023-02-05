@@ -22,24 +22,28 @@ const app = express();
 // dotenv.config()
 
 
-app.use( cors( { 
+app.use( cors( 
+    { 
     origin : [
         "http://localhost:3000",
         "https://my-parlour-service.vercel.app"
-    ], 
-    credentials : true,
-    methods : ["GET", "PUT", "POST", "DELETE", "options"],
-    allowedHeaders: [
-        "Access-Control-Allow-Origin",
-        "Content-Type",
-        "Authorization"
-    ] } ) );
+    ]
+    , 
+    credentials : true
+    // methods : ["GET", "PUT", "POST", "DELETE", "options"],
+    // allowedHeaders: [
+    //     "Access-Control-Allow-Origin",
+    //     "Content-Type",
+    //     "Authorization"
+    // ] 
+    }
+ ) );
 
 app.use(express.json({extended: true, limit:"25mb"}));
 app.use(express.urlencoded({extended: true, limit:"25mb"}));
 // app.use(bodyParser.urlencoded({extended:true, limit:"35mb"}));
-app.use(bodyParser.json({ extended: true, limit : "25mb"}));
-app.use(bodyParser.urlencoded({extended: true, limit: "25mb"}))
+// app.use(bodyParser.json({ extended: true, limit : "25mb"}));
+// app.use(bodyParser.urlencoded({extended: true, limit: "25mb"}))
 app.use(cookieParser())
 app.use(fileupload())
 

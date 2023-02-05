@@ -1,7 +1,7 @@
 
 import './App.css';
 import Layout from './components/layout';
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom"
 import About from './pages/about/about';
 import Contacts from './pages/contact/contact';
 import Sections from './pages/sections/sections';
@@ -70,6 +70,7 @@ function App() {
       ...notificationTooktip,
       loading: true
   })
+
     try {
       axios.get("https://parlour-service-server.vercel.app/admin/services").then(res => {
         if(res.data.success){
@@ -114,16 +115,13 @@ function App() {
       // axios.get("http://localhost:4444/user/logout/me", {
 
           headers: { 
-              "Content-Type": "application/json",
-               Accept : "application/json"
+              "Content-Type": "application/json"
               },
-          mode : "cors",
-          withCredentials : true,
-          credentials : "include"
+              withCredentials: true
+              // sameSite : "none"
       }).then(res => {
           if (res.data.success) {
-
-              // navigate("/")
+            console.log("cookie", res.data.token)
           }
 
       }).catch(er => {

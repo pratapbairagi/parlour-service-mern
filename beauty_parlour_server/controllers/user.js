@@ -157,13 +157,16 @@ export const logoutUser = asyncCatch ( async (req, res, next) => {
 
 //    const logoutToken = await res.clearCookie("jwt");
 
-   const opt = {
-    httpOnly : true,
-    expires : new Date(Date.now()),
-    secure : true
-   }
+//    const opt = {
+//     httpOnly : true,
+//     expires : Date.now(),
+//     secure : true, 
+//     path : "/"
+//    }
 
-   await res.cookie("jwt", null, opt);
+//    await res.cookie("jwt", null, opt);
+
+    await res.clearCookie("jwt")
 
     return res.status(200).json({
         success : true,

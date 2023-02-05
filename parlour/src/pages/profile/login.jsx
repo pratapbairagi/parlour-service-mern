@@ -1,12 +1,12 @@
 import axios from "axios"
 import { useState } from "react"
 import { EnvelopeAt, GenderAmbiguous, House, Lock, Person, Telephone } from "react-bootstrap-icons"
-import { useNavigate } from "react-router-dom"
+import {  useNavigate } from "react-router-dom"
 
 
 const Login = ({setAuthToggle}) => {
 
-    const navigate = useNavigate()
+    const navigate = useNavigate();
     const [user, setUser] = useState({
         email:"",
         password:""
