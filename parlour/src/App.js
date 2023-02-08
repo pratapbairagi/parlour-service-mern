@@ -139,7 +139,7 @@ function App() {
 
   const logoutFun = async () => {
     try {
-      axios.get("https://parlour-service-server.vercel.app/user/logout/me", {
+      axios.post("https://parlour-service-server.vercel.app/user/logout/me", {
       // axios.get("http://localhost:4444/user/logout/me", {
 
           headers: { 

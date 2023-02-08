@@ -11,7 +11,7 @@ userRouter.route("/admin/users").get(getUsers);
 
 userRouter.route("/user/register/me").post(register);
 userRouter.route("/logged/check").get(UserAuth, userLogged);
-userRouter.route("/user/logout/me").get(logoutUser);
+userRouter.route("/user/logout/me").post(logoutUser);
 userRouter.route("/admin/user/delete/:id").delete(deleteUser)
 
 userRouter.route("/user/update").put(UserAuth, userUpdate)
