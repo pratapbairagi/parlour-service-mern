@@ -22,6 +22,34 @@ import { getToken } from './storage/storage';
 
 
 function App() {
+
+  // var str = "abcdefghij".concat("12345")
+  // let token = "";
+  // for(let l = 0; str.length >= l; l++){
+  //   token+= l % 4 === 0  && l != 0 ?  "-" : str.charAt(l-1)
+  //   // token+= l % 4 === 0 ? l === 0 ? str.charAt(l-1) : "-" : str.charAt(l-1)
+  // }
+
+  // console.log(token)
+
+  // for(var i = 0; i < 3; i++){
+  //   setTimeout(()=>{
+  //     alert(i)
+  //   },1000+i)
+  // }
+
+  // (function(){
+  //   var a = b = 5;
+  // })()
+
+  // console.log(b)
+
+  // var a = 5 + "5";
+  // console.log(a)
+
+
+
+
   const [search, setSearch] = useState([])
 
   const [servicesData, setServicesData] = useState([]);

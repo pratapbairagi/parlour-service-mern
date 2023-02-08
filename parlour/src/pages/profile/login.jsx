@@ -27,11 +27,12 @@ const Login = ({setAuthToggle}) => {
             user,
             {
                 headers : { 
-                    Accept : "application/json",
-                    "Content-Type" : "application/json" },
-                mode : "cors",
+                    // Accept : "application/json",
+                    "Content-Type" : "application/json" 
+                },
+                // mode : "cors",
                 withCredentials : true,
-                credentials : "include"
+                // credentials : "include"
             }
             ).then(res=>{
                 if(res.data.success){
