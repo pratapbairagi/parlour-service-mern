@@ -22,21 +22,16 @@ const app = express();
 // dotenv.config()
 
 
-app.use( cors( 
-    { 
-    origin : [
-        "http://localhost:3000",
-        "https://my-parlour-service.vercel.app"
-    ]
-    , 
-    credentials : true
-    // methods : ["GET", "PUT", "POST", "DELETE", "options"],
-    // allowedHeaders: [
-    //     "Access-Control-Allow-Origin",
-    //     "Content-Type",
-    //     "Authorization"
-    // ] 
-    }
+app.use( 
+    cors( 
+    // { 
+    // origin : [
+    //     "http://localhost:3000",
+    //     "https://my-parlour-service.vercel.app"
+    // ]
+    // , 
+    // credentials : true
+    // }
  ) );
 
 app.use(express.json({extended: true, limit:"25mb"}));

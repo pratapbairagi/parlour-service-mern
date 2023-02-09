@@ -145,7 +145,9 @@ function App() {
           headers: { 
               "Content-Type": "application/json"
               },
-              withCredentials: true
+              withCredentials: true,
+              path : "/",
+              domain : "parlour-service-server.vercel.app"
               // sameSite : "none"
       }).then(res => {
           if (res.data.success) {

@@ -42,9 +42,18 @@ export const register = asyncCatch( async (req, res, next) => {
         // generate cookie to authenticate user
         const token = await user.generateToken();
 
-        const cookieOption = {
+        // const cookieOption = {
+        //     httpOnly : true,
+        //     expires : new Date(Date.now() + (24 * 60 * 60 * 1000)),
+        //     secure : true,
+        //     sameSite : "none"
+        // }
+
+        let cookieOption = {
             httpOnly : true,
             expires : new Date(Date.now() + (24 * 60 * 60 * 1000)),
+            domain : "my-parlour-service.vercel.app",
+            path : "/",
             secure : true,
             sameSite : "none"
         }
@@ -81,6 +90,8 @@ export const login = asyncCatch ( async (req, res, next) => {
         let options = {
             httpOnly : true,
             expires : new Date(Date.now() + (24 * 60 * 60 * 1000)),
+            domain : "my-parlour-service.vercel.app",
+            path : "/",
             secure : true,
             sameSite : "none"
         }

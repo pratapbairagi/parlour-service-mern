@@ -30,9 +30,9 @@ const Login = ({setAuthToggle}) => {
                     // Accept : "application/json",
                     "Content-Type" : "application/json" 
                 },
-                // mode : "cors",
-                withCredentials : true,
-                // credentials : "include"
+                withCredentials : true
+                // path : "/",
+                // domain : "parlour-service-server.vercel.app"
             }
             ).then(res=>{
                 if(res.data.success){
