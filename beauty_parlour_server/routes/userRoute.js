@@ -5,18 +5,18 @@ import UserAuth from "../middlewares/userAuthenticate.js";
 
 const userRouter = express.Router()
 
-userRouter.route("/user/:id").get(UserAuth, getUser);
+userRouter.route("/:id").get(UserAuth, getUser);
 
 userRouter.route("/admin/users").get(getUsers);
 
-userRouter.route("/user/register/me").post(register);
-userRouter.route("/logged/check").get(UserAuth, userLogged);
-userRouter.route("/user/logout/me").post(logoutUser);
-userRouter.route("/admin/user/delete/:id").delete(deleteUser)
+userRouter.route("/register").post(register);
+userRouter.route("/logged/in").get(UserAuth, userLogged);
+userRouter.route("/logout/account").get(logoutUser);
+userRouter.route("/delete/:id").delete(deleteUser)
 
-userRouter.route("/user/update").put(UserAuth, userUpdate)
+userRouter.route("/update").put(UserAuth, userUpdate)
 
-userRouter.route("/user/login/me").post(login);
+userRouter.route("/login").post(login);
 // userRouter.route("/user/login/me").post(login, async (req,res, next)=>{
 //     try {
 //         res.cookie("jwt2", "tokenxxxx", {

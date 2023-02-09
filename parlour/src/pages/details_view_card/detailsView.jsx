@@ -18,7 +18,9 @@ const DetailsView = () => {
 
     const fetchService = async () => {
         try {
-            axios.get(`https://parlour-service-server.vercel.app/${id}`).then(res=>{
+            // axios.get(`https://parlour-service-server.vercel.app/${id}`).then(res=>{
+            axios.get(`/api/v1/service/${id}`).then(res=>{
+
                 console.log(res.data)
                 setService(res.data.service);
             })

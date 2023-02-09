@@ -69,7 +69,9 @@ const Profile = ({ userAuth }) => {
             loading: true
         })
         try {
-            await axios.put("https://parlour-service-server.vercel.app/user/update",
+            // await axios.put("https://parlour-service-server.vercel.app/user/update",
+            await axios.put("/api/v1/user/update",
+
                 user,
                 {
                     headers: { "Content-Type": "application/json" },

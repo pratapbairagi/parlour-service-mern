@@ -55,7 +55,7 @@ export const register = asyncCatch( async (req, res, next) => {
             domain : "my-parlour-service.vercel.app",
             path : "/",
             secure : true,
-            sameSite : "none"
+            sameSite : "lax"
         }
         
        return res.status(201).cookie("jwt", token, cookieOption).json({
@@ -90,10 +90,10 @@ export const login = asyncCatch ( async (req, res, next) => {
         let options = {
             httpOnly : true,
             expires : new Date(Date.now() + (24 * 60 * 60 * 1000)),
-            domain : "my-parlour-service.vercel.app",
-            path : "/",
+            // domain : "my-parlour-service.vercel.app",
+            // path : "/",
             secure : true,
-            sameSite : "none"
+            sameSite : "lax"
         }
 
        return res.status(200).cookie("jwt", token, options).json({

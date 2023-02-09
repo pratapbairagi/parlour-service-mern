@@ -49,7 +49,9 @@ const AddService = () => {
             loading : true
             })
         try {
-            axios.post("https://parlour-service-server.vercel.app/admin/service/add", service).then(res=>{
+            // axios.post("https://parlour-service-server.vercel.app/admin/service/add", service).then(res=>{
+            axios.post("/api/v1/service/admin/add", service).then(res=>{
+
                 setNotificationTooltip({
                     ...notificationTooktip,
                     success: true,

@@ -41,7 +41,9 @@ const EditService = () => {
     const fetchServiceFun = async () => {
 
         try {
-            axios.get(`https://parlour-service-server.vercel.app/${id}`).then(res => {
+            // axios.get(`https://parlour-service-server.vercel.app/${id}`).then(res => {
+            axios.get(`/api/v1/service/${id}`).then(res => {
+
                 editService(res.data)
             })
         } catch (error) {
@@ -76,7 +78,9 @@ const EditService = () => {
             loading: true
         })
         try {
-            axios.put("https://parlour-service-server.vercel.app/admin/service/edit", service).then(res => {
+            // axios.put("https://parlour-service-server.vercel.app/admin/service/edit", service).then(res => {
+            axios.put("/api/v1/service/admin/edit", service).then(res => {
+
 
                 setNotificationTooltip({
                     ...notificationTooktip,

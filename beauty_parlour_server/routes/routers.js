@@ -5,15 +5,15 @@ import { addService, deleteService, editService, getAllServices, getSingleServic
 
 const serviceRouter = express.Router()
 
-serviceRouter.route("/admin/services").get(getAllServices);
+serviceRouter.route("/admin").get(getAllServices);
 
-serviceRouter.route("/admin/service/add").post(addService);
+serviceRouter.route("/admin/add").post(addService);
 
 serviceRouter.route("/:id").get(getSingleService);
 
-serviceRouter.route("/admin/service/edit").put(editService);
+serviceRouter.route("/admin/edit").put(editService);
 
-serviceRouter.route("/admin/service/:id").delete(deleteService);
+serviceRouter.route("/admin/:id").delete(deleteService);
 
 
 

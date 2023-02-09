@@ -22,8 +22,7 @@ const app = express();
 // dotenv.config()
 
 
-app.use( 
-    cors( 
+app.use( cors( 
     // { 
     // origin : [
     //     "http://localhost:3000",
@@ -31,6 +30,12 @@ app.use(
     // ]
     // , 
     // credentials : true
+    // methods : ["GET", "PUT", "POST", "DELETE", "options"],
+    // allowedHeaders: [
+    //     "Access-Control-Allow-Origin",
+    //     "Content-Type",
+    //     "Authorization"
+    // ] 
     // }
  ) );
 
@@ -42,8 +47,11 @@ app.use(express.urlencoded({extended: true, limit:"25mb"}));
 app.use(cookieParser())
 app.use(fileupload())
 
-app.use("/", serviceRouter);
-app.use("/", userRouter);
+// app.use("/", serviceRouter);
+// app.use("/", userRouter);
+
+app.use("/api/v1/service/", serviceRouter);
+app.use("/api/v1/user/", userRouter);
 
 
 // app.use("*", (req, res, next)=>{

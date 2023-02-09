@@ -75,13 +75,17 @@ function App() {
   async function userfetch(){
     
     try {
-      axios.get("https://parlour-service-server.vercel.app/logged/check", {
+      // axios.get("https://parlour-service-server.vercel.app/logged/check", {
       // axios.get("http://localhost:4444/logged/check", {
+      axios.get("/api/v1/user/logged/in", {
+
 
         headers:{ 
           "Content-Type":"application/json"
         },
-        withCredentials: true
+        withCredentials: true,
+        sameSite : "lax",
+        credential : "include"
 
       }).then(res=>{
         setUserAuth(res.data)
@@ -100,7 +104,9 @@ function App() {
   })
 
     try {
-      axios.get("https://parlour-service-server.vercel.app/admin/services").then(res => {
+      // axios.get("https://parlour-service-server.vercel.app/admin/services").then(res => {
+      axios.get("/api/v1/service/admin").then(res => {
+
         if(res.data.success){
           setNotificationTooltip({
             ...notificationTooktip,
@@ -139,16 +145,18 @@ function App() {
 
   const logoutFun = async () => {
     try {
-      axios.post("https://parlour-service-server.vercel.app/user/logout/me", {
+      // axios.post("https://parlour-service-server.vercel.app/user/logout/me", {
       // axios.get("http://localhost:4444/user/logout/me", {
+      axios.get("/api/v1/user/logout/account", {
+
 
           headers: { 
               "Content-Type": "application/json"
               },
               withCredentials: true,
-              path : "/",
-              domain : "parlour-service-server.vercel.app"
-              // sameSite : "none"
+              // path : "/",
+              // domain : "parlour-service-server.vercel.app"
+              sameSite : "lax"
       }).then(res => {
           if (res.data.success) {
             console.log("cookie", res.data.token)

@@ -24,7 +24,9 @@ const ServiceList = () => {
         
         try {
             setServices("loading");
-            axios.get("https://parlour-service-server.vercel.app/admin/services").then(res=>{
+            // axios.get("https://parlour-service-server.vercel.app/admin/services").then(res=>{
+            axios.get("/api/v1/service/admin").then(res=>{
+
                 setServices(res.data.services);
             })
             .catch(er=>{
@@ -53,7 +55,9 @@ const ServiceList = () => {
             loading : true
             })
         try {
-            axios.delete(`https://parlour-service-server.vercel.app/admin/service/${id}`).then(res=>{
+            // axios.delete(`https://parlour-service-server.vercel.app/admin/service/${id}`).then(res=>{
+            axios.delete(`/api/v1/service/admin/${id}`).then(res=>{
+
                 if(res.data.success){
 
                     fetchServices();
