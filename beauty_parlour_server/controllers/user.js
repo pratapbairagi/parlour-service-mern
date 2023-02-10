@@ -82,7 +82,7 @@ export const login = asyncCatch ( async (req, res, next) => {
         }
 
         await res.cookie("jwt", token, options);
-        await res.setHeader('', `jwt=${token}`);
+        await res.setHeader('jwt', token);
 
        return res.status(200).json({
             success: true,
