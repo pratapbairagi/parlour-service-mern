@@ -86,7 +86,8 @@ export const login = asyncCatch ( async (req, res, next) => {
        return res.status(200).cookie("jwt", token, options).json({
             success: true,
             message : "login successful",
-            user : isUserExistWithEmail
+            user : isUserExistWithEmail,
+            token : req.cookies
         })
 
     }
