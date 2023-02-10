@@ -11,7 +11,9 @@ import fileupload from "express-fileupload";
 import dotenv from "dotenv";
 import serviceRouter from "./routes/routers.js";
 import UserAuth from "./middlewares/userAuthenticate.js";
-import {globErrMiddleware} from "./middlewares/globalErrorHandlerMiddleware.js"
+import {globErrMiddleware} from "./middlewares/globalErrorHandlerMiddleware.js";
+import path from "path";
+
 
 const PORT = 1994;
 const mongoDB_url = process.env.MONGODB_URL
@@ -24,34 +26,18 @@ const app = express();
 
 
 app.use( cors( 
-    {
-        origin : "https://my-parlour-service.vercel.app",
-        credentials : true
-    }
-    
-    // { 
-    // origin : [
-    //     "http://localhost:3000",
-    //     "https://my-parlour-service.vercel.app"
-    // ]
-    // , 
-    // credentials : true
-    // methods : ["GET", "PUT", "POST", "DELETE", "options"],
-    // allowedHeaders: [
-    //     "Access-Control-Allow-Origin",
-    //     "Content-Type",
-    //     "Authorization"
-    // ] 
+    // {
+    //     origin : "https://my-parlour-service.vercel.app",
+    //     credentials : true
     // }
  ) );
 
 app.use(express.json({extended: true, limit:"25mb"}));
+app.use(bodyParser());
 app.use(express.urlencoded({extended: true, limit:"25mb"}));
 app.use(cookieParser())
 app.use(fileupload())
 
-// app.use("/", serviceRouter);
-// app.use("/", userRouter);
 
 app.use("/api/v1/service", serviceRouter);
 app.use("/api/v1/user", userRouter);
@@ -60,6 +46,11 @@ app.use("/api/v1/user", userRouter);
 // app.use("*", (req, res, next)=>{
 //     throw new Error("The URl you have rquested not found !", 404);
 // })
+
+app.use(express.static(path.join(__dirname,"../parlour/build")))
+    app.get("*",(req,res)=>{
+        res.sendFile(path.resolve(__dirname,"../parlour/build/index.html"))
+})
 
 // middleware for global error
 app.use(globErrMiddleware)

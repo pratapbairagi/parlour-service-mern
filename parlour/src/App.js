@@ -76,15 +76,13 @@ function App() {
     
     try {
       axios.get("https://parlour-service-server.vercel.app/api/v1/user/logged/in", {
-      // axios.get("http://localhost:4444/logged/check", {
       // axios.get("http://localhost:1994/api/v1/user/logged/in", {
 
 
         headers:{ 
-          Accept : "application/json",
           "Content-Type":"application/json"
-        },
-        withCredentials: true
+        }
+        // withCredentials: true
 
       }).then(res=>{
         setUserAuth(res.data)
@@ -145,11 +143,11 @@ function App() {
   const logoutFun = async () => {
     try {
       axios.get("https://parlour-service-server.vercel.app/api/v1/user/logout/me", {
-      // axios.get("http://localhost:4444/user/logout/me", {
       // axios.get("http://localhost:1994/api/v1/user/logout/me", {
 
-          headers: { "Content-Type":"application/json" },
-          withCredentials : true
+          headers: { "Content-Type":"application/json" }
+          // withCredentials : true
+
       }).then(res => {
           if (res.data.success) {
             window.location.reload()

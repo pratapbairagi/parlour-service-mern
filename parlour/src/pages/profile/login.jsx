@@ -22,13 +22,12 @@ const Login = ({setAuthToggle}) => {
 
         try {
            await axios.post("https://parlour-service-server.vercel.app/api/v1/user/login", 
-        // await axios.post("http://localhost:4444/user/login/me", 
         // await axios.post("http://localhost:1994/api/v1/user/login", 
 
             user,
             {
-                headers : { "Content-Type" : "application/json" },
-                withCredentials : true
+                headers : { "Content-Type" : "application/json" }
+                // withCredentials : true
             }
             ).then(res=>{
                 if(res.data.success){
