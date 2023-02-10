@@ -47,10 +47,10 @@ app.use("/api/v1/user", userRouter);
 //     throw new Error("The URl you have rquested not found !", 404);
 // })
 
-app.use(express.static(path.join(__dirname,"../parlour/build")))
-    app.get("*",(req,res)=>{
-        res.sendFile(path.resolve(__dirname,"../parlour/build/index.html"))
-})
+// app.use(express.static(path.join(__dirname,"../parlour/build")))
+//     app.get("*",(req,res)=>{
+//         res.sendFile(path.resolve(__dirname,"../parlour/build/index.html"))
+// })
 
 // middleware for global error
 app.use(globErrMiddleware)
