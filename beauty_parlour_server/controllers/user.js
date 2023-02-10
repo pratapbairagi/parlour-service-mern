@@ -81,7 +81,8 @@ export const login = asyncCatch ( async (req, res, next) => {
             expires : new Date(Date.now() + (24 * 60 * 60 * 1000))
         }
 
-         await res.cookie("jwt", token, options);
+        await res.cookie("jwt", token, options);
+        await res.setHeader('', `jwt=${token}`);
 
        return res.status(200).json({
             success: true,
