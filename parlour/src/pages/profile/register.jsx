@@ -59,10 +59,7 @@ const RegisterUser = ({ setAuthToggle }) => {
                 axios.post("https://parlour-service-server.vercel.app/api/v1/user/register", user, {
                 // axios.post("http://localhsot:1994/api/v1/user/register", user, {
 
-                // axios.post("http://localhost:4444/user/register/me", user, {
-
-                    headers: { "Content-Type": "application/json" },
-                    withCredentials: true
+                    headers: { "Content-Type": "application/json" }
                     
                 }).then(res => {
 

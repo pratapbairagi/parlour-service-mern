@@ -27,16 +27,7 @@ const Login = ({setAuthToggle}) => {
 
             user,
             {
-                headers : { 
-                    Accept : "application/json",
-                    "Content-Type" : "application/json" 
-                },
-                withCredentials : true
-                // credentials : "include",
-                // path : "/",
-                // secure : true,
-                
-                // domain : "parlour-service-server.vercel.app"
+                headers : { "Content-Type" : "application/json" }
             }
             ).then(res=>{
                 if(res.data.success){

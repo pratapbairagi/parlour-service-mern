@@ -74,9 +74,7 @@ const Profile = ({ userAuth }) => {
 
                 user,
                 {
-                    headers: { "Content-Type": "application/json" },
-                    withCredentials: true,
-                    sameSite : "lax"
+                    headers: { "Content-Type": "application/json" }
                 }).then(res => {
                     if (res.data.success) {
                         setNotificationTooltip({

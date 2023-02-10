@@ -148,10 +148,7 @@ function App() {
       // axios.get("http://localhost:4444/user/logout/me", {
       // axios.get("http://localhost:1994/api/v1/user/logout/me", {
 
-          headers: {
-              Accept : "application/json"
-              },
-              withCredentials : true
+          headers: { "Content-Type":"application/json" }
       }).then(res => {
           if (res.data.success) {
             window.location.reload()
