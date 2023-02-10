@@ -10,7 +10,7 @@ userRouter.route("/:id").get(UserAuth, getUser);
 userRouter.route("/admin/users").get(getUsers);
 
 userRouter.route("/register").post(register);
-userRouter.route("/logged/in").get( userLogged);
+userRouter.route("/logged/in").get(UserAuth, userLogged);
 
 userRouter.route("/logout/me").get(logoutMe);
 
