@@ -44,7 +44,9 @@ export const register = asyncCatch( async (req, res, next) => {
 
         let cookieOption = {
             httpOnly : true,
-            expires : new Date(Date.now() + (24 * 60 * 60 * 1000))
+            expires : new Date(Date.now() + (24 * 60 * 60 * 1000)), 
+            secure : true,
+            sameSite : "none"
         }
         
        return res.status(201).cookie("jwt", token, cookieOption).json({
@@ -78,13 +80,12 @@ export const login = asyncCatch ( async (req, res, next) => {
 
         let options = {
             httpOnly : true,
-            expires : new Date(Date.now() + (24 * 60 * 60 * 1000))
+            expires : new Date(Date.now() + (24 * 60 * 60 * 1000)),
+            secure : true, 
+            sameSite : "none"
         }
 
-        await res.cookie("jwt", token, options);
-        await res.setHeader('jwt', token);
-
-       return res.status(200).json({
+       return res.cookie("jwt", token, options).status(200).json({
             success: true,
             message : "login successful",
             user : isUserExistWithEmail,
@@ -139,8 +140,7 @@ export const userLogged = asyncCatch( async (req, res, next)=> {
     res.status(200).json({
         success : true,
         message: "user logged succesful",
-        user,
-        token : req.cookies
+        user
     })
 
 })
@@ -150,7 +150,9 @@ export const logoutMe = asyncCatch( async (req, res, next) => {
 
    const opt = {
     httpOnly : true,
-    expires : new Date(0)
+    expires : new Date(0),
+    secure : true,
+    sameSite : "none"
    }
 
     await res.clearCookie("jwt", null, opt)

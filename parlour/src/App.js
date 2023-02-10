@@ -81,8 +81,9 @@ function App() {
 
         headers:{ 
           "Content-Type":"application/json"
-        }
-        // withCredentials: true
+        },
+        withCredentials: true,
+        sameSite : "none"
 
       }).then(res=>{
         setUserAuth(res.data)
@@ -145,8 +146,9 @@ function App() {
       axios.get("https://parlour-service-server.vercel.app/api/v1/user/logout/me", {
       // axios.get("http://localhost:1994/api/v1/user/logout/me", {
 
-          headers: { "Content-Type":"application/json" }
-          // withCredentials : true
+          headers: { "Content-Type":"application/json" },
+          withCredentials : true,
+          sameSite : "none"
 
       }).then(res => {
           if (res.data.success) {

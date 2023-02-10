@@ -33,7 +33,7 @@ app.use( cors(
  ) );
 
 app.use(express.json({extended: true, limit:"25mb"}));
-app.use(bodyParser());
+// app.use(bodyParser());
 app.use(express.urlencoded({extended: true, limit:"25mb"}));
 app.use(cookieParser())
 app.use(fileupload())

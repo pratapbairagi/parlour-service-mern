@@ -26,8 +26,9 @@ const Login = ({setAuthToggle}) => {
 
             user,
             {
-                headers : { "Content-Type" : "application/json" }
-                // withCredentials : true
+                headers : { "Content-Type" : "application/json" },
+                withCredentials : true,
+                sameSite : "none"
             }
             ).then(res=>{
                 if(res.data.success){
