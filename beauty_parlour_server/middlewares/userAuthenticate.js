@@ -4,7 +4,7 @@ import User from "../model/userSchema.js";
 import AppError from "../utils/errorHandler.js";
 
 const UserAuth = asyncCatch ( async (req, res, next) => {
-    const {jwt} = await req.cookies
+    const {jwt} = await req.cookies;
 
     const {id} = jwToken.verify(jwt, "cke73trdU&T t^R76R%e6e65R7 8y9 rTe6  kUYE$y55e47");
 

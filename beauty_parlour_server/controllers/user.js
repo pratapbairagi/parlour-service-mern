@@ -75,7 +75,7 @@ export const login = asyncCatch ( async (req, res, next) => {
             return next( new AppError("Invalid email or password !", 401))
         }
 
-        let token = await isUserExistWithEmail.generateToken()
+        let token = await isUserExistWithEmail.generateToken();
 
         let options = {
             httpOnly : true,
@@ -83,11 +83,13 @@ export const login = asyncCatch ( async (req, res, next) => {
             secure : true
         }
 
-       return res.status(200).cookie("jwt", token, options).json({
+        let cookie = await res.cookie("jwt", token, options);
+
+       return res.status(200).json({
             success: true,
             message : "login successful",
             user : isUserExistWithEmail,
-            token : req.cookies
+            token : cookie
         })
 
     }
