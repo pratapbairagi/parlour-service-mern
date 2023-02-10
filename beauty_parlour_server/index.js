@@ -28,7 +28,7 @@ const app = express();
 app.use( cors( 
     {
         origin : "https://my-parlour-service.vercel.app",
-        credentials : "include"
+        credentials : true
     }
  ) );
 
