@@ -42,20 +42,12 @@ export const register = asyncCatch( async (req, res, next) => {
         // generate cookie to authenticate user
         const token = await user.generateToken();
 
-        // const cookieOption = {
-        //     httpOnly : true,
-        //     expires : new Date(Date.now() + (24 * 60 * 60 * 1000)),
-        //     secure : true,
-        //     sameSite : "none"
-        // }
-
         let cookieOption = {
             httpOnly : true,
             expires : new Date(Date.now() + (24 * 60 * 60 * 1000)),
             domain : "my-parlour-service.vercel.app",
             path : "/",
-            secure : true,
-            sameSite : "lax"
+            secure : true
         }
         
        return res.status(201).cookie("jwt", token, cookieOption).json({
@@ -90,10 +82,9 @@ export const login = asyncCatch ( async (req, res, next) => {
         let options = {
             httpOnly : true,
             expires : new Date(Date.now() + (24 * 60 * 60 * 1000)),
-            // domain : "my-parlour-service.vercel.app",
-            // path : "/",
-            secure : true,
-            sameSite : "lax"
+            domain : "my-parlour-service.vercel.app",
+            path : "/",
+            secure : true
         }
 
        return res.status(200).cookie("jwt", token, options).json({
@@ -140,6 +131,8 @@ export const getUser = asyncCatch(async (req, res, next) => {
 // user logged
 export const userLogged = asyncCatch( async (req, res, next)=> {
 
+    console.log("logged user cookie", req.cookies)
+
     const id = req.user._id
     const user = await User.findById(id);
 
@@ -156,33 +149,23 @@ export const userLogged = asyncCatch( async (req, res, next)=> {
 })
 
 // logout user
-export const logoutUser = asyncCatch ( async (req, res, next) => {
+export const logoutMe = asyncCatch( async (req, res, next) => {
 
-    // const id = req.user;
+   const opt = {
+    httpOnly : true,
+    expires : new Date(0),
+    secure : true,
+    path : "/",
+    domain : "my-parlour-service.vercel.app"
+   }
 
-    // const user = await User.findById(id);
+    await res.clearCookie("jwt", null, opt)
 
-    // if(!user){
-    //     return next( new AppError("Need to login !", 401))
-    // }
-
-//    const logoutToken = await res.clearCookie("jwt");
-
-//    const opt = {
-//     httpOnly : true,
-//     expires : Date.now(),
-//     secure : true, 
-//     path : "/"
-//    }
-
-//    await res.cookie("jwt", null, opt);
-
-    await res.clearCookie("jwt")
-
-    return res.status(200).json({
+     res.status(200).json({
         success : true,
         message : "Log out successfully !"
     })
+
 })
 
 // delete user

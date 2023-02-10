@@ -11,8 +11,9 @@ import fileupload from "express-fileupload";
 import dotenv from "dotenv";
 import serviceRouter from "./routes/routers.js";
 import UserAuth from "./middlewares/userAuthenticate.js";
+import {globErrMiddleware} from "./middlewares/globalErrorHandlerMiddleware.js"
 
-const PORT = 4444;
+const PORT = 1994;
 const mongoDB_url = process.env.MONGODB_URL
 const app = express();
 
@@ -23,6 +24,11 @@ const app = express();
 
 
 app.use( cors( 
+    {
+        origin : "https://my-parlour-service.vercel.app",
+        credentials : true
+    }
+    
     // { 
     // origin : [
     //     "http://localhost:3000",
@@ -41,17 +47,14 @@ app.use( cors(
 
 app.use(express.json({extended: true, limit:"25mb"}));
 app.use(express.urlencoded({extended: true, limit:"25mb"}));
-// app.use(bodyParser.urlencoded({extended:true, limit:"35mb"}));
-// app.use(bodyParser.json({ extended: true, limit : "25mb"}));
-// app.use(bodyParser.urlencoded({extended: true, limit: "25mb"}))
 app.use(cookieParser())
 app.use(fileupload())
 
 // app.use("/", serviceRouter);
 // app.use("/", userRouter);
 
-app.use("/api/v1/service/", serviceRouter);
-app.use("/api/v1/user/", userRouter);
+app.use("/api/v1/service", serviceRouter);
+app.use("/api/v1/user", userRouter);
 
 
 // app.use("*", (req, res, next)=>{
@@ -59,16 +62,7 @@ app.use("/api/v1/user/", userRouter);
 // })
 
 // middleware for global error
-app.use((err,req,res,next)=>{
-    err.statusCode = err.statusCode || 500
-    err.message = err.message || "Internal server Error"
-
-    res.status(err.statusCode).json({
-        success: false,
-        message : err.message,
-        stack : err.stack
-    })
-})
+app.use(globErrMiddleware)
 
 // app.use(globalErrorHandler)
 

@@ -21,10 +21,9 @@ const Login = ({setAuthToggle}) => {
         e.preventDefault()
 
         try {
-        //    await axios.post("https://parlour-service-server.vercel.app/user/login/me", 
+           await axios.post("https://parlour-service-server.vercel.app/api/v1/user/login", 
         // await axios.post("http://localhost:4444/user/login/me", 
-        await axios.post("/api/v1/user/login", 
-
+        // await axios.post("http://localhost:1994/api/v1/user/login", 
 
             user,
             {
@@ -32,9 +31,8 @@ const Login = ({setAuthToggle}) => {
                     Accept : "application/json",
                     "Content-Type" : "application/json" 
                 },
-                withCredentials : true,
-                credentials : "include",
-                sameSite : "none",
+                withCredentials : true
+                // credentials : "include",
                 // path : "/",
                 // secure : true,
                 

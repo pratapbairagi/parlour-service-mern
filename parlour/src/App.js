@@ -75,17 +75,16 @@ function App() {
   async function userfetch(){
     
     try {
-      // axios.get("https://parlour-service-server.vercel.app/logged/check", {
+      axios.get("https://parlour-service-server.vercel.app/api/v1/user/logged/in", {
       // axios.get("http://localhost:4444/logged/check", {
-      axios.get("/api/v1/user/logged/in", {
+      // axios.get("http://localhost:1994/api/v1/user/logged/in", {
 
 
         headers:{ 
+          Accept : "application/json",
           "Content-Type":"application/json"
         },
-        withCredentials: true,
-        sameSite : "lax",
-        credential : "include"
+        withCredentials: true
 
       }).then(res=>{
         setUserAuth(res.data)
@@ -104,8 +103,8 @@ function App() {
   })
 
     try {
-      // axios.get("https://parlour-service-server.vercel.app/admin/services").then(res => {
-      axios.get("/api/v1/service/admin").then(res => {
+      axios.get("https://parlour-service-server.vercel.app/api/v1/service/admin").then(res => {
+      // axios.get("http://localhost:1994/api/v1/service/admin").then(res => {
 
         if(res.data.success){
           setNotificationTooltip({
@@ -145,21 +144,18 @@ function App() {
 
   const logoutFun = async () => {
     try {
-      // axios.post("https://parlour-service-server.vercel.app/user/logout/me", {
+      axios.get("https://parlour-service-server.vercel.app/api/v1/user/logout/me", {
       // axios.get("http://localhost:4444/user/logout/me", {
-      axios.get("/api/v1/user/logout/account", {
+      // axios.get("http://localhost:1994/api/v1/user/logout/me", {
 
-
-          headers: { 
-              "Content-Type": "application/json"
+          headers: {
+              Accept : "application/json"
               },
-              withCredentials: true,
-              sameSite : "lax"
-              // path : "/",
-              // domain : "parlour-service-server.vercel.app"
+              withCredentials : true
       }).then(res => {
           if (res.data.success) {
-            console.log("cookie", res.data.token)
+            window.location.reload()
+            console.log("cookie", res.data)
           }
 
       }).catch(er => {

@@ -1,6 +1,6 @@
 
 import express from "express";
-import { deleteUser, getUser, getUsers, login, logoutUser, register, userLogged, userUpdate } from "../controllers/user.js";
+import { deleteUser, getUser, getUsers, login, logoutMe, register, userLogged, userUpdate } from "../controllers/user.js";
 import UserAuth from "../middlewares/userAuthenticate.js";
 
 const userRouter = express.Router()
@@ -11,7 +11,9 @@ userRouter.route("/admin/users").get(getUsers);
 
 userRouter.route("/register").post(register);
 userRouter.route("/logged/in").get(UserAuth, userLogged);
-userRouter.route("/logout/account").get(logoutUser);
+
+userRouter.route("/logout/me").get(logoutMe);
+
 userRouter.route("/delete/:id").delete(deleteUser)
 
 userRouter.route("/update").put(UserAuth, userUpdate)
