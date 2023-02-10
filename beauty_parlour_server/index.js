@@ -26,10 +26,9 @@ const app = express();
 
 
 app.use( cors( 
-    // {
-    //     origin : "https://my-parlour-service.vercel.app",
-    //     credentials : true
-    // }
+    {
+        origin : "https://my-parlour-service.vercel.app"
+    }
  ) );
 
 app.use(express.json({extended: true, limit:"25mb"}));
