@@ -154,9 +154,9 @@ function App() {
               "Content-Type": "application/json"
               },
               withCredentials: true,
+              sameSite : "lax"
               // path : "/",
               // domain : "parlour-service-server.vercel.app"
-              sameSite : "lax"
       }).then(res => {
           if (res.data.success) {
             console.log("cookie", res.data.token)

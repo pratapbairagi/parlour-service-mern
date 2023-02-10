@@ -62,7 +62,8 @@ const RegisterUser = ({ setAuthToggle }) => {
                 // axios.post("http://localhost:4444/user/register/me", user, {
 
                     headers: { "Content-Type": "application/json" },
-                    withCredentials: true
+                    withCredentials: true,
+                    sameSite : "lax"
                     
                 }).then(res => {
 
