@@ -127,8 +127,6 @@ export const getUser = asyncCatch(async (req, res, next) => {
 // user logged
 export const userLogged = asyncCatch( async (req, res, next)=> {
 
-    console.log("logged user cookie", req.cookies)
-
     const id = req.user._id
     const user = await User.findById(id);
 
@@ -139,7 +137,8 @@ export const userLogged = asyncCatch( async (req, res, next)=> {
     res.status(200).json({
         success : true,
         message: "user logged succesful",
-        user
+        user,
+        token : req.cookies
     })
 
 })
