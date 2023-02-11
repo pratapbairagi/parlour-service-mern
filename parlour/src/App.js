@@ -73,7 +73,6 @@ function App() {
   }, [])
 
   async function userfetch(){
-    
     try {
       axios.get("https://parlour-service-server.vercel.app/api/v1/user/logged/in", {
       // axios.get("http://localhost:1994/api/v1/user/logged/in", {
@@ -142,6 +141,7 @@ function App() {
   }
 
   const logoutFun = async () => {
+
     try {
       axios.get("https://parlour-service-server.vercel.app/api/v1/user/logout/me", {
       // axios.get("http://localhost:1994/api/v1/user/logout/me", {

@@ -128,8 +128,11 @@ export const getUser = asyncCatch(async (req, res, next) => {
 })
 
 // user logged
-export const userLogged = asyncCatch( async (req, res, next)=> {
+export const userLogged =  async (req, res, next)=> {
 
+    try {
+        
+    
     const id = req.user._id
     const user = await User.findById(id);
 
@@ -143,11 +146,17 @@ export const userLogged = asyncCatch( async (req, res, next)=> {
         user
     })
 
-})
+} catch (error) {
+        res.json(error)
+}
+
+}
 
 // logout user
-export const logoutMe = asyncCatch( async (req, res, next) => {
+export const logoutMe = async (req, res, next) => {
 
+    try {
+    
    const opt = {
     httpOnly : true,
     expires : new Date(0),
@@ -162,7 +171,10 @@ export const logoutMe = asyncCatch( async (req, res, next) => {
         message : "Log out successfully !"
     })
 
-})
+} catch (error) {
+        res.json(error)
+}
+}
 
 // delete user
 export const deleteUser = asyncCatch ( async ( req, res, next ) => {
